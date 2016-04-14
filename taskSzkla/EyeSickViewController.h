@@ -6,8 +6,8 @@
 //  Copyright © 2016 Marcin Mielniczek. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ParentViewController.h"
 
-@interface EyeSickViewController : UIViewController
+@interface EyeSickViewController : ParentViewController
 
 @end

@@ -379,23 +379,6 @@
             </objects>
             <point key="canvasLocation" x="943" y="338"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Oit-ra-ZCp">
-            <objects>
-                <viewController id="PPn-ki-HW5" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="70d-vn-od2"/>
-                        <viewControllerLayoutGuide type="bottom" id="qaA-Fv-Koc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GCr-mJ-GfD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qTK-wa-ow5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="ic_action_basket" width="70" height="70"/>

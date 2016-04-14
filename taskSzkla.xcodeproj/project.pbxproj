@@ -20,6 +20,7 @@
 		8686C1351CBE57BD0070CF0F /* taskSzklaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1341CBE57BD0070CF0F /* taskSzklaUITests.m */; };
 		8686C1451CBE591C0070CF0F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1441CBE591C0070CF0F /* LoginViewController.m */; };
 		8686C1491CBE59B90070CF0F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1481CBE59B90070CF0F /* MenuViewController.m */; };
+		86FCE5131CC0538C0051EA5A /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCE5121CC0538C0051EA5A /* ParentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		8686C1441CBE591C0070CF0F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8686C1471CBE59B90070CF0F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		8686C1481CBE59B90070CF0F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		86FCE5111CC0538C0051EA5A /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
+		86FCE5121CC0538C0051EA5A /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +163,8 @@
 				8686C1421CBE58FA0070CF0F /* LogPanel */,
 				8686C1121CBE57BD0070CF0F /* AppDelegate.h */,
 				8686C1131CBE57BD0070CF0F /* AppDelegate.m */,
+				86FCE5111CC0538C0051EA5A /* ParentViewController.h */,
+				86FCE5121CC0538C0051EA5A /* ParentViewController.m */,
 				8686C1181CBE57BD0070CF0F /* Main.storyboard */,
 				8686C11B1CBE57BD0070CF0F /* Assets.xcassets */,
 				8686C11D1CBE57BD0070CF0F /* LaunchScreen.storyboard */,
@@ -351,6 +356,7 @@
 				8686C1491CBE59B90070CF0F /* MenuViewController.m in Sources */,
 				865315301CBFCDCE00979255 /* CalendarViewController.m in Sources */,
 				865315361CBFCDE600979255 /* NewBuyViewController.m in Sources */,
+				86FCE5131CC0538C0051EA5A /* ParentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
