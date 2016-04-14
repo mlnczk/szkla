@@ -18,50 +18,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self createMiddleNavigationBar];
-    [self createLeftNavigationBar];
-    [self createRightNavigationBar];
+    [self createNavigationItemsImageName:@"toolbar_button_menu" side:@"left" selector:@selector(openSideMenu)];
+    [self createNavigationItemsImageName:@"toolbar_button_back" side:@"right" selector:@selector(goBack)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(void)createMiddleNavigationBar{
     
     UIImage *image = [UIImage imageNamed:@"ic_action_logo_toolbar"];
     
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:image];
-
 }
--(void)createLeftNavigationBar{
-    UIImage *defaultImg = [UIImage imageNamed:@"toolbar_button_menu"];
+
+- (void)createNavigationItemsImageName:(NSString *)imageName side:(NSString *)side selector:(SEL)selector{
+    UIImage *defaultImg = [UIImage imageNamed:imageName];
     
     UIButton *customButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 65, 35)];
     [customButton setBackgroundImage:defaultImg forState:UIControlStateNormal];
     
-    [customButton addTarget:self action:@selector(openSideMenu) forControlEvents:UIControlEventTouchUpInside];
-    
+    [customButton addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *defaultItem = [[UIBarButtonItem alloc] initWithCustomView:customButton];
-    
     //defniuje pozycje
-    self.navigationItem.leftBarButtonItem = defaultItem;
+    if ([side isEqualToString:@"left"]) {
+         self.navigationItem.leftBarButtonItem = defaultItem;
+    }else{
+        self.navigationItem.rightBarButtonItem = defaultItem;
+    }
 }
+
+
 -(void)openSideMenu{
     NSLog(@"cokolwiek?");
 }
--(void)createRightNavigationBar{
-    UIImage *defaultImg = [UIImage imageNamed:@"toolbar_button_back"];
 
-    UIButton *customButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 65, 35)];
-    [customButton setBackgroundImage:defaultImg forState:UIControlStateNormal];
-    
-    [customButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *defaultItem = [[UIBarButtonItem alloc] initWithCustomView:customButton];
-    
-    //defniuje pozycje
-    self.navigationItem.rightBarButtonItem = defaultItem;
-}
 //PRZEJSCIE DO TYLU
 -(void)goBack{
     [self.navigationController popViewControllerAnimated:YES];
