@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self createMiddleNavigationBar];
+    //BARDZO WAZNE, MNIEJ KODU I LADNIEJSZY SPOSOB
     [self createNavigationItemsImageName:@"toolbar_button_menu" side:@"left" selector:@selector(openSideMenu)];
     [self createNavigationItemsImageName:@"toolbar_button_back" side:@"right" selector:@selector(goBack)];
 }
@@ -42,7 +43,7 @@
     
     [customButton addTarget:self action:selector forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *defaultItem = [[UIBarButtonItem alloc] initWithCustomView:customButton];
-    //defniuje pozycje
+    //definiuje pozycje
     if ([side isEqualToString:@"left"]) {
          self.navigationItem.leftBarButtonItem = defaultItem;
     }else{
