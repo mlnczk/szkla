@@ -1,18 +1,18 @@
 //
-//  BuyListViewController.m
+//  AddDiseaseViewController.m
 //  taskSzkla
 //
-//  Created by Marcin Mielniczek on 4/14/16.
+//  Created by Marcin Mielniczek on 4/15/16.
 //  Copyright © 2016 Marcin Mielniczek. All rights reserved.
 //
 
-#import "BuyListViewController.h"
+#import "AddDiseaseViewController.h"
 
-@interface BuyListViewController ()
+@interface AddDiseaseViewController ()
 
 @end
 
-@implementation BuyListViewController
+@implementation AddDiseaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

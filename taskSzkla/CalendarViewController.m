@@ -17,11 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"Uwaga"
+                                                       message:@"Musisz byc zalogowany."
+                                                      delegate:self
+                                             cancelButtonTitle:@"OK"
+                                             otherButtonTitles:nil];
+    [theAlert show];
+    [self goBack];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)goBack{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

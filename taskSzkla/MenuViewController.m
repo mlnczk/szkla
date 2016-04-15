@@ -9,12 +9,7 @@
 #import "MenuViewController.h"
 
 @interface MenuViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *buttonShowItems;
-@property (strong, nonatomic) IBOutlet UIButton *buttonBuyNew;
-@property (strong, nonatomic) IBOutlet UIButton *buttonCallendar;
-@property (strong, nonatomic) IBOutlet UIButton *buttonShowMap;
-@property (strong, nonatomic) IBOutlet UIButton *buttonMoney;
-@property (strong, nonatomic) IBOutlet UIButton *buttonEyeSick;
+
 
 @end
 
@@ -28,24 +23,22 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
 }
-- (IBAction)showMap:(id)sender {
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.google.pl/maps/place/EUVIC+Sp.+z+o.o./@50.2908845,18.7018441,17z/data=!4m7!1m4!3m3!1s0x471131a07ce3c06f:0x72c3c9ee8891e42c!2sPrzewozowa,+Gliwice!3b1!3m1!1s0x0000000000000000:0x6d63aefcbed6cfaf"]];
+- (IBAction)basketButtonTapped:(id)sender {
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.szkla.com/koszyk.html"]];
 }
-- (IBAction)eyeSickTapped:(id)sender {
-    [self performSegueWithIdentifier:@"showEyeSick" sender:self];
+- (IBAction)pigButtonTapped:(id)sender {
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.szkla.com/promocje.html"]];
 }
-- (IBAction)showCashTapped:(id)sender {
-    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.szkla.com/"]];
+- (IBAction)mapButtonTapped:(id)sender {
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.google.pl/maps/place/Novum.+Soczewki+kontaktowe/@50.29566,18.6480713,13z/data=!4m5!1m2!2m1!1sszkla+kontaktowe!3m1!1s0x0000000000000000:0x976b19dd6f249e6e"]];
 }
-- (IBAction)showCalendarTapped:(id)sender {
-    [self performSegueWithIdentifier:@"showCalendar" sender:self];
-}
-- (IBAction)showShowItemsTapped:(id)sender {
-    [self performSegueWithIdentifier:@"showShowItems" sender:self];
-}
-- (IBAction)newBuyTapped:(id)sender {
-    [self performSegueWithIdentifier:@"showNewBuy" sender:self];
+- (IBAction)newBasketButtonTapped:(id)sender {
+    
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"https://www.szkla.com"]];
 }
 
 /*
@@ -57,5 +50,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end
+
+
