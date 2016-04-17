@@ -20,6 +20,16 @@
 		8686C1491CBE59B90070CF0F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1481CBE59B90070CF0F /* MenuViewController.m */; };
 		86FCE5131CC0538C0051EA5A /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCE5121CC0538C0051EA5A /* ParentViewController.m */; };
 		86FCE5161CC05F910051EA5A /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FCE5151CC05F910051EA5A /* LogInViewController.m */; };
+		CE0FB2A31CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB29C1CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.m */; };
+		CE0FB2A41CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB29E1CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.m */; };
+		CE0FB2A51CC410C700A4BC75 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2A01CC410C700A4BC75 /* TPKeyboardAvoidingTableView.m */; };
+		CE0FB2A61CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2A21CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		CE0FB2AD1CC41D4000A4BC75 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2A81CC41D4000A4BC75 /* JSONModel.m */; };
+		CE0FB2AE1CC41D4000A4BC75 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2AA1CC41D4000A4BC75 /* JSONModelClassProperty.m */; };
+		CE0FB2AF1CC41D4000A4BC75 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2AC1CC41D4000A4BC75 /* JSONModelError.m */; };
+		CE0FB2B31CC41D9D00A4BC75 /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2B21CC41D9D00A4BC75 /* Disease.m */; };
+		CE0FB2B81CC41F9200A4BC75 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2B51CC41F9200A4BC75 /* JSONKeyMapper.m */; };
+		CE0FB2B91CC41F9200A4BC75 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0FB2B71CC41F9200A4BC75 /* JSONValueTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +76,26 @@
 		86FCE5121CC0538C0051EA5A /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
 		86FCE5141CC05F910051EA5A /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		86FCE5151CC05F910051EA5A /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		CE0FB29B1CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h"; sourceTree = "<group>"; };
+		CE0FB29C1CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m"; sourceTree = "<group>"; };
+		CE0FB29D1CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h"; sourceTree = "<group>"; };
+		CE0FB29E1CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m"; sourceTree = "<group>"; };
+		CE0FB29F1CC410C700A4BC75 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h"; sourceTree = "<group>"; };
+		CE0FB2A01CC410C700A4BC75 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m"; sourceTree = "<group>"; };
+		CE0FB2A11CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		CE0FB2A21CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "../../../Downloads/TPKeyboardAvoiding-master/TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		CE0FB2A71CC41D4000A4BC75 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModel.h"; sourceTree = "<group>"; };
+		CE0FB2A81CC41D4000A4BC75 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModel.m"; sourceTree = "<group>"; };
+		CE0FB2A91CC41D4000A4BC75 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModelClassProperty.h"; sourceTree = "<group>"; };
+		CE0FB2AA1CC41D4000A4BC75 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModelClassProperty.m"; sourceTree = "<group>"; };
+		CE0FB2AB1CC41D4000A4BC75 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModelError.h"; sourceTree = "<group>"; };
+		CE0FB2AC1CC41D4000A4BC75 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModel/JSONModelError.m"; sourceTree = "<group>"; };
+		CE0FB2B11CC41D9D00A4BC75 /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disease.h; sourceTree = "<group>"; };
+		CE0FB2B21CC41D9D00A4BC75 /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disease.m; sourceTree = "<group>"; };
+		CE0FB2B41CC41F9200A4BC75 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModelTransformations/JSONKeyMapper.h"; sourceTree = "<group>"; };
+		CE0FB2B51CC41F9200A4BC75 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModelTransformations/JSONKeyMapper.m"; sourceTree = "<group>"; };
+		CE0FB2B61CC41F9200A4BC75 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModelTransformations/JSONValueTransformer.h"; sourceTree = "<group>"; };
+		CE0FB2B71CC41F9200A4BC75 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = "../../../Downloads/JSONModel-master/JSONModel/JSONModelTransformations/JSONValueTransformer.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +173,8 @@
 		8686C10E1CBE57BD0070CF0F /* taskSzkla */ = {
 			isa = PBXGroup;
 			children = (
+				CE0FB2B01CC41D7A00A4BC75 /* model */,
+				CE0FB20B1CC40F9700A4BC75 /* pods */,
 				860536971CC116EA0033B906 /* AddDisease */,
 				865315281CBFCD9500979255 /* Calendar */,
 				865315231CBFCD5200979255 /* EyeSick */,
@@ -203,6 +235,40 @@
 				8686C1481CBE59B90070CF0F /* MenuViewController.m */,
 			);
 			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		CE0FB20B1CC40F9700A4BC75 /* pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FB2B41CC41F9200A4BC75 /* JSONKeyMapper.h */,
+				CE0FB2B51CC41F9200A4BC75 /* JSONKeyMapper.m */,
+				CE0FB2B61CC41F9200A4BC75 /* JSONValueTransformer.h */,
+				CE0FB2B71CC41F9200A4BC75 /* JSONValueTransformer.m */,
+				CE0FB2A71CC41D4000A4BC75 /* JSONModel.h */,
+				CE0FB2A81CC41D4000A4BC75 /* JSONModel.m */,
+				CE0FB2A91CC41D4000A4BC75 /* JSONModelClassProperty.h */,
+				CE0FB2AA1CC41D4000A4BC75 /* JSONModelClassProperty.m */,
+				CE0FB2AB1CC41D4000A4BC75 /* JSONModelError.h */,
+				CE0FB2AC1CC41D4000A4BC75 /* JSONModelError.m */,
+				CE0FB29B1CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.h */,
+				CE0FB29C1CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.m */,
+				CE0FB29D1CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.h */,
+				CE0FB29E1CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.m */,
+				CE0FB29F1CC410C700A4BC75 /* TPKeyboardAvoidingTableView.h */,
+				CE0FB2A01CC410C700A4BC75 /* TPKeyboardAvoidingTableView.m */,
+				CE0FB2A11CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				CE0FB2A21CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = pods;
+			sourceTree = "<group>";
+		};
+		CE0FB2B01CC41D7A00A4BC75 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE0FB2B11CC41D9D00A4BC75 /* Disease.h */,
+				CE0FB2B21CC41D9D00A4BC75 /* Disease.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,11 +402,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				865315261CBFCD6600979255 /* EyeSickViewController.m in Sources */,
+				CE0FB2A61CC410C700A4BC75 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				CE0FB2B31CC41D9D00A4BC75 /* Disease.m in Sources */,
+				CE0FB2A41CC410C700A4BC75 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				CE0FB2AF1CC41D4000A4BC75 /* JSONModelError.m in Sources */,
+				CE0FB2A31CC410C700A4BC75 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				8686C1141CBE57BD0070CF0F /* AppDelegate.m in Sources */,
 				8686C1111CBE57BD0070CF0F /* main.m in Sources */,
 				8605369A1CC116FB0033B906 /* AddDiseaseViewController.m in Sources */,
+				CE0FB2AE1CC41D4000A4BC75 /* JSONModelClassProperty.m in Sources */,
 				8686C1491CBE59B90070CF0F /* MenuViewController.m in Sources */,
+				CE0FB2B91CC41F9200A4BC75 /* JSONValueTransformer.m in Sources */,
+				CE0FB2B81CC41F9200A4BC75 /* JSONKeyMapper.m in Sources */,
 				86FCE5161CC05F910051EA5A /* LogInViewController.m in Sources */,
+				CE0FB2AD1CC41D4000A4BC75 /* JSONModel.m in Sources */,
+				CE0FB2A51CC410C700A4BC75 /* TPKeyboardAvoidingTableView.m in Sources */,
 				865315301CBFCDCE00979255 /* CalendarViewController.m in Sources */,
 				86FCE5131CC0538C0051EA5A /* ParentViewController.m in Sources */,
 			);
