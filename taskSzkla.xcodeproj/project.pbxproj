@@ -10,6 +10,7 @@
 		8605369A1CC116FB0033B906 /* AddDiseaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 860536991CC116FB0033B906 /* AddDiseaseViewController.m */; };
 		865315261CBFCD6600979255 /* EyeSickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865315251CBFCD6600979255 /* EyeSickViewController.m */; };
 		865315301CBFCDCE00979255 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8653152F1CBFCDCE00979255 /* CalendarViewController.m */; };
+		86857FBF1CC5048600D4FF6C /* DiseaseNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 86857FBE1CC5048600D4FF6C /* DiseaseNames.m */; };
 		8686C1111CBE57BD0070CF0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1101CBE57BD0070CF0F /* main.m */; };
 		8686C1141CBE57BD0070CF0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8686C1131CBE57BD0070CF0F /* AppDelegate.m */; };
 		8686C11A1CBE57BD0070CF0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8686C1181CBE57BD0070CF0F /* Main.storyboard */; };
@@ -56,6 +57,8 @@
 		865315251CBFCD6600979255 /* EyeSickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeSickViewController.m; sourceTree = "<group>"; };
 		8653152E1CBFCDCE00979255 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		8653152F1CBFCDCE00979255 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		86857FBD1CC5048600D4FF6C /* DiseaseNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiseaseNames.h; sourceTree = "<group>"; };
+		86857FBE1CC5048600D4FF6C /* DiseaseNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiseaseNames.m; sourceTree = "<group>"; };
 		8686C10C1CBE57BD0070CF0F /* taskSzkla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskSzkla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8686C1101CBE57BD0070CF0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8686C1121CBE57BD0070CF0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 			children = (
 				CE0FB2B11CC41D9D00A4BC75 /* Disease.h */,
 				CE0FB2B21CC41D9D00A4BC75 /* Disease.m */,
+				86857FBD1CC5048600D4FF6C /* DiseaseNames.h */,
+				86857FBE1CC5048600D4FF6C /* DiseaseNames.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				8605369A1CC116FB0033B906 /* AddDiseaseViewController.m in Sources */,
 				CE0FB2AE1CC41D4000A4BC75 /* JSONModelClassProperty.m in Sources */,
 				8686C1491CBE59B90070CF0F /* MenuViewController.m in Sources */,
+				86857FBF1CC5048600D4FF6C /* DiseaseNames.m in Sources */,
 				CE0FB2B91CC41F9200A4BC75 /* JSONValueTransformer.m in Sources */,
 				CE0FB2B81CC41F9200A4BC75 /* JSONKeyMapper.m in Sources */,
 				86FCE5161CC05F910051EA5A /* LogInViewController.m in Sources */,

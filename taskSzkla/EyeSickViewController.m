@@ -8,6 +8,7 @@
 
 #import "EyeSickViewController.h"
 #import "Disease.h"
+#import "DiseaseNames.h"
 
 
 @interface EyeSickViewController ()
@@ -39,8 +40,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)diseaseNamesAppear:(id)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Names of Diseases" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
+}
 -(void)viewWillAppear:(BOOL)animated{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *array = [defaults objectForKey:@"disease"];
+    
+    for (int i = 0; i<array.count; i++){
+        DiseaseNames *names = [[DiseaseNames alloc]initWithDictionary:array[i] error:nil];
+        NSLog(@"disease name%@", names.Name);
+        NSLog(@"diseaseLeftEyePower:::%@", names.disease.leftEyePower);
+    }
+    
+    
     NSDictionary *dict = [defaults objectForKey:@"disease"];
     Disease *disease = [[Disease alloc]initWithDictionary:dict error:nil];
     self.labelLeftEyePower.text = disease.leftEyePower;
@@ -54,7 +67,6 @@
     self.labelRightEyeDiameter.text = disease.rightEyeDiameter;
     self.labelRightEyeCylinder.text = disease.rightEyeCylinder;
 
-    
     
 }
 

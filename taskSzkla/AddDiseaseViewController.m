@@ -44,7 +44,22 @@
 }
 - (IBAction)saveThis:(id)sender {
     
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *defaultArray = [defaults objectForKey:@"disease"];
+                             
+                             NSMutableArray *array = [NSMutableArray new];
+                             //jesli tablica nie istnieje, tworzysz nowa
+                             if (!array){
+                                 array = [NSMutableArray new];
+                             }else{
+                                 array = defaultArray.mutableCopy;
+                             }
+    
+    NSMutableDictionary *name = [NSMutableDictionary new];
+    [name setObject:self.textFieldName.text forKey:@"name"];
+    
 NSMutableDictionary *dict = [NSMutableDictionary new];
+    
 [dict setObject:self.textFieldLeftEyePower.text forKey:@"leftEyePower"];
 [dict setObject:self.textFieldLeftEyeAxis.text forKey:@"leftEyeAxis"];
 [dict setObject:self.textFieldLeftEyeCurve.text forKey:@"leftEyeCurve"];
@@ -55,15 +70,17 @@ NSMutableDictionary *dict = [NSMutableDictionary new];
 [dict setObject:self.textFieldRightEyeCurve.text forKey:@"rightEyeCurve"];
 [dict setObject:self.textFieldRightEyeDiameter.text forKey:@"rightEyeDiameter"];
 [dict setObject:self.textFieldRightEyeCylinder.text forKey:@"rightEyeCylinder"];
-[dict setObject:self.textFieldName forKey:@"Name"];
+// [dict setObject:self.textFieldName forKey:@"Name"];
     
-    NSUserDefaults *defaults = [NSUserDefaults new];
-    [defaults setObject:dict forKey:@"disease"];
+    [name setObject:dict forKey:@"disease"];
+    [array addObject:name];
+    [defaults setObject:array forKey:@"disease"];
     [defaults synchronize];
     
     [self.navigationController popViewControllerAnimated:YES];
 
 }
+
 
 /*
 #pragma mark - Navigation
