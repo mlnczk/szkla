@@ -49,9 +49,7 @@
                              
                              NSMutableArray *array = [NSMutableArray new];
                              //jesli tablica nie istnieje, tworzysz nowa
-                             if (!array){
-                                 array = [NSMutableArray new];
-                             }else{
+                             if (defaultArray){
                                  array = defaultArray.mutableCopy;
                              }
     

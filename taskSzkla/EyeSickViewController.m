@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelLeftEyeCurve;
 @property (weak, nonatomic) IBOutlet UILabel *labelLeftEyeDiameter;
 @property (weak, nonatomic) IBOutlet UILabel *labelLeftEyeCylinder;
+@property (nonatomic, strong) NSMutableArray *marray;
 
 @end
 
@@ -41,18 +42,22 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)diseaseNamesAppear:(id)sender {
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"Names of Diseases" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:nil];
 }
 -(void)viewWillAppear:(BOOL)animated{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *array = [defaults objectForKey:@"disease"];
+    self.marray = [NSMutableArray new];
     
-    for (int i = 0; i<array.count; i++){
-        DiseaseNames *names = [[DiseaseNames alloc]initWithDictionary:array[i] error:nil];
-        NSLog(@"disease name%@", names.Name);
-        NSLog(@"diseaseLeftEyePower:::%@", names.disease.leftEyePower);
+    for(int i=0; i<array.count; i++){
+        
+        DiseaseNames *diseaseName = [[DiseaseNames alloc]initWithDictionary:array[i] error:nil];
+        NSLog(@"Nazwy %@", diseaseName.Name);
+        
+        [self.marray addObject:diseaseName.Name];
+        
     }
-    
     
     NSDictionary *dict = [defaults objectForKey:@"disease"];
     Disease *disease = [[Disease alloc]initWithDictionary:dict error:nil];

@@ -10,6 +10,10 @@
 #import "Disease.h"
 
 @interface DiseaseNames : JSONModel
+
 @property (nonatomic, strong)NSString *Name;
 @property (nonatomic, strong)Disease *disease;
+
+
+
 @end
